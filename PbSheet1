@@ -86,3 +86,17 @@ def commonDiv(m : Int, n : Int) ={
 	}
 	m
 }
+
+//Pb 9
+
+def nrHits(a : Array[Int]) : Int = {
+	val n= a.size; val total=1; val i =1; val hit=a(0)
+	while(i<n){
+		if(a(i)>hit){
+			hit=a(i)
+			total=total+1
+		}
+	i=i+1;
+	}
+	total
+}
