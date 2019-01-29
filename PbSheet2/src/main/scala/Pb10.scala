@@ -1,4 +1,4 @@
-
+package solutions
 object pb10{
 
 def eval(a: Array[Double], x: Double) : Double =
