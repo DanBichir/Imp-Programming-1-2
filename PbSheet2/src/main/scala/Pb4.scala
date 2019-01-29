@@ -16,4 +16,10 @@ object pb4{
 }
 //a) numSteps
 //b) Maximum error is: timeStep - a small deviation
-//c)
+/**c) 
+    while (time < timeEnd -timeStep + k){
+        time += timeStep
+    }
+    where we choose k as a very small positive value (the smaller it is, we will get less inaccurate tests)
+    Time will at most be inaccurate by k - deviation, so it becomes more accurate as k decreases**/
+    
