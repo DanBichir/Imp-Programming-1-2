@@ -1,0 +1,7 @@
+PbSheet2/project/*
+PbSheet2/target/*
+
+*.class
+*.log
+*.cache
+*.properties
