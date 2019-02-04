@@ -1,0 +1,4 @@
+a) If a is decreasing, it will give the wrong result since it will automatically search in the wrong half of the sequence.
+b) It will return 0 since no changes happen (the while doesn't start since i=j=0)
+c) I)  Change the variables to Long
+   II) Change the m from m = (i+j)/2 to m = i+(j-i)/2 (so that i+j doesn't get out of Int value)
