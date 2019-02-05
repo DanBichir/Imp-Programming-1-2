@@ -27,7 +27,7 @@ object pb3{
     }
     i
   }
-  // We change i=i*2 to i=i*(2^(1/eps))
+  //c) We change i=i*2 to i=i*(2^(1/eps))
       
   
 
