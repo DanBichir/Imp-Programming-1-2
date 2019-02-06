@@ -11,6 +11,7 @@ object pb2{
     }
     return a
   }
+  
   def search(a: Int) : Int = {
   var i = 0; var j = a
   var x = (j-i)/3
@@ -31,6 +32,7 @@ object pb2{
   }
   i
 }
+  
   def maxsearch(a: Int) : Int = {
   var i = 0; var j = 46000
   var x = (j-i)/3
