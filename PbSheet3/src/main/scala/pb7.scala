@@ -25,6 +25,7 @@ object pb7{
           QSort(l,k); QSort(k+1,r)
       }
   }
+    
   def QSort2(l: Int,r: Int) : Unit = {
       while(r-l > 1){ // nothing to do if segment empty or singleton
           val k = partition(l,r)
@@ -32,6 +33,7 @@ object pb7{
           l = k + 1
       }
   }
+    
   def QSortImp(l: Int,r: Int) : Unit = {
       while(r-l > 1){ // nothing to do if segment empty or singleton
           val k = partition(l,r)
