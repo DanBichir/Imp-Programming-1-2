@@ -1,6 +1,7 @@
 package solutions
 
 object pb6{
+    var a = (8,10,3,4,13)
 
 def partition2(l: Int, r: Int) : Int = {
     val x = a(l) // pivot
@@ -24,4 +25,4 @@ def partition2(l: Int, r: Int) : Int = {
     i-1 // position of the pivot
   }
 }
-// [8,10,3,4,13] 13 will be changing position twice
+// (8,10,3,4,13) 13 will be changing position twice
