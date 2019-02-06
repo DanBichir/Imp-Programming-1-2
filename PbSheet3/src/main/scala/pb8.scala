@@ -1,6 +1,7 @@
 package solutions
 
 object pb8{
+  var a = Array(5,4,3,2,1)
 
 /*
   a)	O(n^2)
