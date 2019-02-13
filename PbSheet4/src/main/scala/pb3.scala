@@ -7,19 +7,19 @@ trait IntSet{
 
 
 /** Add elem to the set if it is within bounds.
-* post: S = S0 ∪ {elem | elem < N, elem >= 0} */
+* post: S = S ∪ {elem | elem < N, elem >= 0} */
   def add(elem: Int)
 
-/** Does the set contain elem?
-* post: S = S0 ∧ returns elem ∈ S */
+/** Checks for elem in set
+* post: S = S ∧ returns elem ∈ S */
   def isIn(elem: Int): Boolean
 
 /** Remove elem from the set.
-* post: S = S0 − {elem} */
+* post: S = S − {elem} */
   def remove(elem: Int)
 
 /** The size of the set.
-* post: S = S0 ∧ returns #S */
+* post: S = S ∧ returns |S| */
   def size : Int
 }
 
@@ -45,7 +45,7 @@ class BitMapSet(N: Int) extends IntSet {
 
   def remove(elem: Int) : Unit = {
     if(elem < n && elem >= 0){
-      if(a(elem))counter -= 1
+      if(a(elem))   counter -= 1
       a(elem) = false
     }
   }
