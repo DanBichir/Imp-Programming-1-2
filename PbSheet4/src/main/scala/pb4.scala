@@ -19,7 +19,7 @@ And it is possible to have no first element (empty list).
 
 
 b)
-S = S_0 ^ return x where x ∈ S_0
+S = S ^ return x where x ∈ S
 
 
 */
