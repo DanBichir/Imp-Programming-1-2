@@ -1,9 +1,5 @@
 package solutions
 
-/* A queue of data of type A.
-* state: q : seq A
-* init: q = [] */
-
 trait Queue[A]{
 
   /* Add x to the back of the queue
@@ -21,17 +17,9 @@ trait Queue[A]{
   def isEmpty: Boolean
 }
 
-
-/*
-state: s : seq Int
-init: s = []
-s = l(left,size)
-l(left,0) = []
-l(left,size) = s(left):l((left+1)%MAX,size-1)
-DTI: size <= MAX && 0 <= left < MAX
-*/
-
-
+/* A queue of data of type A.
+* state: q : seq A
+* init: q = [] */
 
 class ArrayQueue extends Queue[Int]{
     val MAX = 100
@@ -55,3 +43,12 @@ class ArrayQueue extends Queue[Int]{
 
     def isFull : Boolean = size == MAX
 }
+
+/*
+state: s : seq Int
+init: s = []
+s = l(left,size)
+l(left,0) = []
+l(left,size) = s(left):l((left+1)%MAX,size-1)
+Datatype Invariant: size <= MAX && 0 <= left < MAX
+*/
