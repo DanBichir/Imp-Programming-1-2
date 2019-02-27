@@ -27,7 +27,7 @@ object pb4{
             return n.number
         }
 
-        /* Add the name and number to the mapping */
+        /* Add the name and number */
         def store(name: String, number: String) = {
             val n = find(name)
             if(n.name != name){
