@@ -33,5 +33,5 @@ s = l(head.next)
 l(tail) = []
 l(a) = a.datum:L(a.next)
 
-Datatype Invaraiant: l(head.next) is finite and the names in l(head.next) are distinct
+Datatype Invariant: l(head.next) is finite and the names in l(head.next) are distinct
 */
