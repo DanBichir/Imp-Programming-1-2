@@ -12,7 +12,6 @@ class Node(var datum: Int, var next: Node){
         l + "."
     }
 }
-
 object pb1{
     def createList(){
         var myList : Node = null
