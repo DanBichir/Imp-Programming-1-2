@@ -1,10 +1,13 @@
 package solutions
 
-object linkedList{
-  private class Node(val name:String, var number:String, var next:Node)
-}
+
 
 object pb3{
+  
+    object linkedList{
+        private class Node(val name:String, var number:String, var next:Node)
+    }
+      
     class linkedList extends Book{
         private var list : linkedList.Node =  new linkedList.Node("?","?",null)
 
