@@ -1,10 +1,6 @@
 package solutions
 
 object pb3{
-  
-    object linkedList{
-        private class Node(val name:String, var number:String, var next:Node)
-    }
       
     class linkedList extends Book{
         private var list : linkedList.Node =  new linkedList.Node("?","?",null)
@@ -13,7 +9,7 @@ object pb3{
         private def findpre(name:String) : linkedList.Node = {
             var n = list
             while(n.next != null && n.next.name <= name) n = n.next
-            return n
+            n
         }
 
         private def find(name:String) : linkedList.Node = {
@@ -47,6 +43,9 @@ object pb3{
               n.next = n.next.next
             }
         }
+    }
+    object linkedList{
+        private class Node(val name:String, var number:String, var next:Node)
     }
 }
 
