@@ -3,8 +3,7 @@ package solutions
 class IntQueue extends Queue[Int]{
     var head : Node = new Node(Int.MinValue,null)
     var tail : Node = head
-
-
+    
     // post: s = s ^ returns s == []
     def isEmpty : Boolean = {
         head == tail
