@@ -15,7 +15,7 @@ class Node(var datum: Int, var next: Node){
 object pb1{
     def createList(){
         var myList : Node = null
-        i=1
+        var i=1
         while(i<=12){
             myList = new Node(i,myList)
             i+=1
@@ -25,7 +25,7 @@ object pb1{
 
     def reverseList(){
         var myList : Node = null
-        i=1
+        var i=1
         while(i<=12){
             myList = new Node(i,myList)
             i+=1
