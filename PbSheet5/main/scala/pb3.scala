@@ -1,7 +1,5 @@
 package solutions
 
-
-
 object pb3{
   
     object linkedList{
