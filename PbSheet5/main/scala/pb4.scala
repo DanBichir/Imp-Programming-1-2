@@ -1,16 +1,5 @@
 package solutions
 
-/*
-a)
-
-E(X)=sum(p(i)*(i*c)) + q*(n*c)
-We have the sequences p(i) that we can rearrange. 
-The mininum of our expectation is achieved when we pair the greatest values of p(i) with the smallest values of i*c and smallest with greatest.
-Assume p(i)<p(j) for i<j, then p(i)*i*c + p(j)*j*c > p(j)*i*c + p(i)*j*c => p(i)>p(j) for i<j
-
-*/
-
-//b)
 
 object pb4{
     object linkedList{
@@ -60,3 +49,15 @@ object pb4{
         }
     }
 }
+
+
+
+/*
+a)
+
+E(X)=sum(p(i)*(i*c)) + q*(n*c)
+We have the sequences p(i) that we can rearrange. 
+The mininum of our expectation is achieved when we pair the greatest values of p(i) with the smallest values of i*c and smallest with greatest.
+Assume p(i)<p(j) for i<j, then p(i)*i*c + p(j)*j*c > p(j)*i*c + p(i)*j*c => p(i)>p(j) for i<j
+
+*/
